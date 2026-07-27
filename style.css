@@ -992,13 +992,12 @@ nav ul li{
 
 }
 
-.hero-image{
+  .hero-image{
 
-    width:100%;
+        width:300px;
+        height:300px;
 
-    margin-top:30px;
-
-}
+    }
 
 .hero h1{
 
@@ -1014,9 +1013,9 @@ nav ul li{
 
 .hero-image img{
 
-    width:220px;
+    width:270px;
 
-    height:220px;
+    height:270px;
 
 }
 
