@@ -136,18 +136,10 @@ nav ul li a.active{
 
     border-radius:25px;
 
-    background:linear-gradient(
-        135deg,
-        #ff90bf,
-        #ec5fa4,
-        #d63384
-    );
+    background: linear-gradient(135deg, #ffe6f1 0%, #ffffff 55%, #f3f3f3 100%);
 
     color:white;
-
-  background: linear-gradient(135deg, #ffe6f1 0%, #ffffff 55%, #f3f3f3 100%);
-
-
+   
 }
 
 /* ---------- Left Side ---------- */
