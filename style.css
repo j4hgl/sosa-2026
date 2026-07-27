@@ -1,0 +1,1188 @@
+/* ===================================================
+   SOSA 2026 WEBSITE
+   PART 1
+   Global • Navigation • Hero • Buttons
+=================================================== */
+
+/* ========== RESET ========== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ========== NAVIGATION ========== */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:80px;
+
+    background:#ffffff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+/* ---------- Logo ---------- */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:100px;
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-right:15px;
+
+}
+
+.logo h2{
+
+    color:#d63384;
+    font-size:26px;
+
+}
+
+.logo p{
+
+    color:#777;
+    font-size:13px;
+
+}
+
+/* ---------- Menu ---------- */
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:30px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:#555;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+
+    color:#d63384;
+
+}
+
+/* ========== HERO SECTION ========== */
+
+.hero{
+
+    width:92%;
+    max-width:1400px;
+
+    margin:120px auto 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    background:linear-gradient(
+        135deg,
+        #ff90bf,
+        #ec5fa4,
+        #d63384
+    );
+
+    color:white;
+
+}
+
+/* ---------- Left Side ---------- */
+
+.hero-text{
+
+    width:55%;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:white;
+    color:#d63384;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-size:14px;
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ---------- Hero Button ---------- */
+
+.button{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#d63384;
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.button:hover{
+
+    background:#eeeeee;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+}
+
+/* ---------- Right Side ---------- */
+
+/* Hero Logo Container (White Circle) */
+.hero-image{
+
+    width:320px;
+    height:320px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    flex-shrink:0;
+
+    margin-right:40px; 
+
+}
+
+.hero-image img{
+
+    width:650px;
+    height:650px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+/* ========== SECTION TITLES ========== */
+
+section h2{
+
+    font-size:38px;
+
+    color:#333;
+
+}
+
+section h4{
+
+    color:#d63384;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+/* ===================================================
+   SOSA 2026 WEBSITE
+   PART 2
+   Info Cards • Map • Station Buttons
+=================================================== */
+
+/* ========== INFO CARDS ========== */
+
+.info{
+
+    width:92%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.info-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.info-card h3{
+
+    color:#d63384;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.info-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* ========== MAP SECTION ========== */
+
+.map-section{
+
+    width:92%;
+
+    max-width:1400px;
+
+    margin:70px auto;
+
+}
+
+.map-section h2{
+
+    font-size:40px;
+
+    margin:10px 0;
+
+}
+
+.map-section p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+/* ---------- Map Container ---------- */
+
+.map{
+
+    position:relative;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.map-image{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ========== STATION BUTTONS ========== */
+
+.station-btn{
+
+    position:absolute;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:120px;
+
+    height:80px;
+
+    background:#666;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    border:2px solid white;
+
+    border-radius:0;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+.station-btn:hover{
+
+    background:#d63384;
+
+    transform:scale(1.05);
+
+}
+
+/* ===== Adjust these to match your gym map ===== */
+
+.station1{
+
+    top:6%;
+
+    left:78%;
+
+}
+
+.station2{
+
+    top:6%;
+
+    left:46%;
+
+}
+
+.station3{
+
+    top:6%;
+
+    left:18%;
+
+}
+
+.station4{
+
+    top:26%;
+
+    left:18%;
+
+}
+
+.station5{
+
+    top:48%;
+
+    left:18%;
+
+}
+
+.station6{
+
+    top:77%;
+
+    left:18%;
+
+}
+
+/* ========== STATION CARDS ========== */
+
+.stations{
+
+    width:92%;
+
+    max-width:1400px;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.station-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.station-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.station-card h2{
+
+    color:#d63384;
+
+    margin-bottom:15px;
+
+}
+
+.station-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.station-card a{
+
+    text-decoration:none;
+
+    color:#d63384;
+
+    font-weight:bold;
+
+}
+
+.station-card a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===================================================
+   SOSA 2026 WEBSITE
+   PART 3
+   About • Contact • Station Pages
+=================================================== */
+
+/* ========== PAGE CONTENT ========== */
+
+.page-content{
+
+    width:92%;
+    max-width:1400px;
+
+    margin:70px auto;
+
+}
+
+.page-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+/* ========== PAGE CARDS ========== */
+
+.page-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.page-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.page-card h2{
+
+    color:#d63384;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+.page-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* ========== STATION PAGE ========== */
+
+.station-hero{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.station-title{
+
+    font-size:42px;
+
+    color:#d63384;
+
+    margin-bottom:15px;
+
+}
+
+.station-subtitle{
+
+    color:#666;
+
+    font-size:18px;
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* ========== GALLERY IMAGE ========== */
+
+.station-gallery img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.station-gallery img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ========== LIST ========== */
+
+.station-list{
+
+    margin-top:15px;
+
+    margin-left:20px;
+
+    line-height:2;
+
+    color:#555;
+
+}
+
+/* ========== CONTACT BOX ========== */
+
+.contact-box{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.contact-box h2{
+
+    color:#d63384;
+
+    margin-bottom:20px;
+
+}
+
+.contact-box p{
+
+    margin:12px 0;
+
+    font-size:17px;
+
+    color:#555;
+
+}
+
+/* ========== CONTACT FORM ========== */
+
+.contact-form{
+
+    margin-top:25px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#d63384;
+
+    box-shadow:0 0 8px rgba(214,51,132,.2);
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.contact-form button{
+
+    background:#d63384;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#b0256d;
+
+    transform:translateY(-3px);
+
+}
+
+/* ========== BACK BUTTON ========== */
+
+.back-button{
+
+    text-align:center;
+
+    margin:50px 0;
+
+}
+
+.back-button a{
+
+    display:inline-block;
+
+    background:#d63384;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 35px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.back-button a:hover{
+
+    background:#b0256d;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===================================================
+   SOSA 2026 WEBSITE
+   PART 4
+   Footer • Scrollbar • Animations • Responsive
+=================================================== */
+
+/* ========== FOOTER ========== */
+
+footer{
+
+    background:#444;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    margin-top:70px;
+
+}
+
+footer h3{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+    color:#ddd;
+
+}
+
+/* ========== SCROLLBAR ========== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eeeeee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d63384;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#b0256d;
+
+}
+
+/* ========== FADE ANIMATION ========== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.info-card,
+.station-card,
+.page-card,
+.contact-box{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width:900px){
+
+nav{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    margin-bottom:15px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+nav ul li{
+
+    margin:10px;
+
+}
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero-text{
+
+    width:100%;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    margin-top:30px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.hero-image img{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+.info{
+
+    grid-template-columns:1fr;
+
+}
+
+.stations{
+
+    grid-template-columns:1fr;
+
+}
+
+.page-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.map-section h2{
+
+    font-size:32px;
+
+}
+
+/* Mobile Station Buttons */
+
+.station-btn{
+
+    width:90px;
+
+    height:34px;
+
+    font-size:11px;
+
+}
+
+}
+
+/* ========== MOBILE ========== */
+
+@media (max-width:600px){
+
+nav{
+
+    padding:15px;
+
+}
+
+.logo img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+.logo h2{
+
+    font-size:20px;
+
+}
+
+.logo p{
+
+    font-size:11px;
+
+}
+
+nav ul li{
+
+    margin:8px;
+
+}
+
+nav ul li a{
+
+    font-size:14px;
+
+}
+
+.hero{
+
+    margin-top:160px;
+
+    padding:30px 20px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.badge{
+
+    font-size:12px;
+
+}
+
+.button{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.station-btn{
+
+    width:75px;
+
+    height:30px;
+
+    font-size:10px;
+
+}
+
+footer h3{
+
+    font-size:22px;
+
+}
+
+footer p{
+
+    font-size:14px;
+
+}
+
+}
+
+/* ========== LARGE DESKTOP ========== */
+
+@media (min-width:1600px){
+
+.hero{
+
+    max-width:1600px;
+
+}
+
+.info,
+.map-section,
+.stations,
+.page-content{
+
+    max-width:1600px;
+
+}
+
+}
