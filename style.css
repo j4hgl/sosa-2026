@@ -145,6 +145,9 @@ nav ul li a.active{
 
     color:white;
 
+  background: linear-gradient(135deg, #ffe6f1 0%, #ffffff 55%, #f3f3f3 100%);
+
+
 }
 
 /* ---------- Left Side ---------- */
