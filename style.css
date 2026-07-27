@@ -317,6 +317,12 @@ section h4{
 
 }
 
+.info-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .info-card:hover{
 
     transform:translateY(-8px);
