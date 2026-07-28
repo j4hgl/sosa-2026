@@ -607,34 +607,40 @@ section h6{
 
 /* ========== STATION LOCATIONS ========== */
 
+/* Station 1 - Library & Registration Area (rightmost) */
 .station1{
-    top: 18%;
-    left: 13%;
+    top: 17%;
+    left: 72%;
 }
 
+/* Station 2 - Computer Lab */
 .station2{
-    top: 18%;
-    left: 31%;
+    top: 17%;
+    left: 56%;
 }
 
+/* Station 3 - Faculty Office */
 .station3{
-    top: 18%;
-    left: 49%;
+    top: 17%;
+    left: 40%;
 }
 
+/* Station 4 - Laboratory of Excellence */
 .station4{
-    top: 18%;
-    left: 67%;
+    top: 17%;
+    left: 24%;
 }
 
+/* Station 5 */
 .station5{
-    top: 18%;
-    left: 82%;
+    top: 17%;
+    left: 12%;
 }
 
+/* Station 6 */
 .station6{
-    top: 18%;
-    left: 92%;
+    top: 17%;
+    left: 2%;
 }
 
 /* ========== STATION CARDS ========== */
