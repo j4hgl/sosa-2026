@@ -158,45 +158,6 @@ nav ul li a.active{
 
 }
 
-/* ===========================
-   BREADCRUMB
-=========================== */
-
-.breadcrumb-container {
-    max-width: 1200px;
-    margin: 100px auto 0; /* Increased top and bottom spacing */
-    padding: 80px 0;
-}
-
-.breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.95rem;
-    font-weight: 500;
-}
-
-.breadcrumb a {
-    color: #d63384;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.breadcrumb a:hover {
-    color: #b51f68;
-    text-decoration: underline;
-}
-
-.breadcrumb .separator {
-    color: #888;
-}
-
-.breadcrumb .current {
-    color: #555;
-    font-weight: 600;
-}
-
-
 /* ========== HERO ========== */
 
 .hero{
