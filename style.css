@@ -571,37 +571,37 @@ section h6{
 
 .station1::after{
 
-    background-image:url("station1-preview.jpg");
+    background-image:url("t.jpg");
 
 }
 
 .station2::after{
 
-    background-image:url("station2-preview.jpg");
+    background-image:url("r.jpg");
 
 }
 
 .station3::after{
 
-    background-image:url("station3-preview.jpg");
+    background-image:url("r.jpg");
 
 }
 
 .station4::after{
 
-    background-image:url("station4-preview.jpg");
+    background-image:url("e.jpg");
 
 }
 
 .station5::after{
 
-    background-image:url("station5-preview.jpg");
+    background-image:url("e.jpg");
 
 }
 
 .station6::after{
 
-    background-image:url("station6-preview.jpg");
+    background-image:url("e.jpg");
 
 }
 
