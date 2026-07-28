@@ -610,7 +610,7 @@ section h6{
 /* Station 1 - Library & Registration Area (rightmost) */
 .station1{
     top: 17%;
-    left: 62%;
+    left: 55%;
 }
 
 /* Station 2 - Computer Lab */
@@ -634,13 +634,13 @@ section h6{
 /* Station 5 */
 .station5{
     top: 17%;
-    left: 27%;
+    left: 33%;
 }
 
 /* Station 6 */
 .station6{
     top: 17%;
-    left: 20%;
+    left: 24%;
 }
 
 /* ========== STATION CARDS ========== */
