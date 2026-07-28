@@ -571,7 +571,7 @@ section h6{
 
 .station1::after{
 
-    background-image:url("t.jpg");
+    background-image:url("r.jpg");
 
 }
 
@@ -610,7 +610,7 @@ section h6{
 /* Station 1 - Library & Registration Area (rightmost) */
 .station1{
     top: 17%;
-    left: 55%;
+    left: 49%;
 }
 
 /* Station 2 - Computer Lab */
