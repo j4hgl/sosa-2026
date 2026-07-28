@@ -142,10 +142,8 @@
 
     <h2>Science Laboratory</h2>
 
-    <h6> 
-        
-    Click any station to view more information.
-    
+    <h6>
+        Click a stage group below to continue.
     </h6>
 
     <br>
@@ -154,27 +152,55 @@
 
         <img src="qw.jpg" alt="Gymnasium Map" class="map-image">
 
-        <!-- Station Buttons -->
+        <!-- Stage Group Buttons -->
 
-        <a href="station1.html" class="station-btn station1">
-            Stage 1
-        </a>
+        <button id="stage12Btn" class="stage-group-btn stage12">
+            Stage 1 &amp; 2
+        </button>
 
-        <a href="station3.html" class="station-btn station3">
-            Stage 2
-        </a>
-
-        <a href="station5.html" class="station-btn station5">
-            Stage 3
-        </a>
-
-        <a href="station6.html" class="station-btn station6">
-            Stage 4
-        </a>
+        <button id="stage34Btn" class="stage-group-btn stage34">
+            Stage 3 &amp; 4
+        </button>
 
     </div>
 
 </section>
+
+<!-- ================= POPUPS ================= -->
+
+<div id="overlay"></div>
+
+<div id="popup12" class="popup">
+
+    <button id="close12" class="close-btn">&times;</button>
+
+    <h2>Choose a Stage</h2>
+
+    <a href="station1.html" class="popup-btn">
+        Stage 1
+    </a>
+
+    <a href="station3.html" class="popup-btn">
+        Stage 2
+    </a>
+
+</div>
+
+<div id="popup34" class="popup">
+
+    <button id="close34" class="close-btn">&times;</button>
+
+    <h2>Choose a Stage</h2>
+
+    <a href="station5.html" class="popup-btn">
+        Stage 3
+    </a>
+
+    <a href="station6.html" class="popup-btn">
+        Stage 4
+    </a>
+
+</div>
 
 <!-- ================= FOOTER ================= -->
 
