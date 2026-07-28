@@ -164,7 +164,7 @@ nav ul li a.active{
 
 .breadcrumb-container {
     max-width: 1200px;
-    margin: 120px auto 30px; /* Increased top and bottom spacing */
+    margin: 100px auto 0; /* Increased top and bottom spacing */
     padding: 0 30px;
 }
 
