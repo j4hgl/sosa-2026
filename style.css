@@ -60,8 +60,8 @@ nav{
 
 .logo img{
 
-    width:180px;
-    height:180px;
+    width:210px;
+    height:210px;
 
     object-fit:contain;
 
@@ -275,8 +275,8 @@ nav ul li a.active{
 
 .hero-image{
 
-    width:300px;
-    height:300px;
+    width:260px;
+    height:260px;
 
     display:flex;
     justify-content:center;
@@ -294,8 +294,8 @@ nav ul li a.active{
 
 .hero-image img{
 
-    width:420px;
-    height:420px;
+    width:450px;
+    height:450px;
 
     object-fit:contain;
 
