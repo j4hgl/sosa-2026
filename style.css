@@ -517,6 +517,37 @@ section h6{
 
 }
 
+.stage-group-btn{
+
+    position:absolute;
+
+    width:75px;
+    height:50px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#d63384;
+    color:#fff;
+
+    font-size:12px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:20;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    line-height:1.2;
+}
+
 /* ========== HOVER IMAGE PREVIEW ========== */
 
 .station-btn::after{
