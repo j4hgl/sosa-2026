@@ -10,7 +10,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
 }
 
 html{
@@ -20,7 +20,7 @@ html{
 body{
     background:#f5f5f5;
     color:#333;
-    line-height:1.6;
+    line-height:1.7;
 }
 
 /* ========== NAVIGATION ========== */
@@ -35,7 +35,7 @@ nav{
     width:100%;
     height:80px;
 
-    background: linear-gradient(to right, #ffffff, #f8f8f8);
+    background:linear-gradient(to right,#ffffff,#f8f8f8);
 
     display:flex;
     justify-content:space-between;
@@ -60,36 +60,45 @@ nav{
 
 .logo img{
 
-    width:100px;
-    height:100px;
+    width:60px;
+    height:60px;
 
-    object-fit:cover;
+    object-fit:contain;
 
     border-radius:50%;
 
     margin-right:15px;
+
+    flex-shrink:0;
 
 }
 
 .logo h2{
 
     color:#d63384;
+
     font-size:26px;
+
+    margin-bottom:2px;
 
 }
 
 .logo p{
 
     color:#777;
+
     font-size:13px;
 
 }
 
-/* ---------- Menu ---------- */
+/* ---------- Navigation Links ---------- */
 
 nav ul{
 
     display:flex;
+
+    align-items:center;
+
     list-style:none;
 
 }
@@ -110,6 +119,36 @@ nav ul li a{
 
     transition:.3s;
 
+    position:relative;
+
+    padding:5px 0;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-5px;
+
+    width:0;
+
+    height:3px;
+
+    background:#d63384;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+
+    width:100%;
+
 }
 
 nav ul li a:hover,
@@ -119,7 +158,7 @@ nav ul li a.active{
 
 }
 
-/* ========== HERO SECTION ========== */
+/* ========== HERO ========== */
 
 .hero{
 
@@ -132,25 +171,29 @@ nav ul li a.active{
     justify-content:space-between;
     align-items:center;
 
+    gap:60px;
+
     padding:60px;
 
     border-radius:25px;
 
-  background: linear-gradient(
-    135deg,
-    #c2185b 0%,
-    #f48fb1 100%
-);
+    background:linear-gradient(
+        135deg,
+        #c2185b 0%,
+        #f48fb1 100%
+    );
 
     color:white;
-   
+
+    overflow:hidden;
+
 }
 
-/* ---------- Left Side ---------- */
+/* ---------- Left ---------- */
 
 .hero-text{
 
-    width:55%;
+    flex:1;
 
 }
 
@@ -159,14 +202,18 @@ nav ul li a.active{
     display:inline-block;
 
     background:white;
+
     color:#d63384;
 
     padding:8px 18px;
 
-    border-radius:25px;
+    border-radius:30px;
 
     font-size:14px;
+
     font-weight:bold;
+
+    letter-spacing:1px;
 
     margin-bottom:20px;
 
@@ -176,7 +223,7 @@ nav ul li a.active{
 
     font-size:56px;
 
-    line-height:1.1;
+    line-height:1.15;
 
     margin-bottom:20px;
 
@@ -186,13 +233,13 @@ nav ul li a.active{
 
     font-size:18px;
 
-    line-height:1.8;
+    line-height:1.9;
 
     margin-bottom:35px;
 
 }
 
-/* ---------- Hero Button ---------- */
+/* ---------- Button ---------- */
 
 .button{
 
@@ -204,11 +251,11 @@ nav ul li a.active{
 
     text-decoration:none;
 
+    font-weight:bold;
+
     padding:14px 30px;
 
     border-radius:8px;
-
-    font-weight:bold;
 
     transition:.3s;
 
@@ -216,17 +263,16 @@ nav ul li a.active{
 
 .button:hover{
 
-    background:#eeeeee;
+    background:#f4f4f4;
 
     transform:translateY(-3px);
 
-    box-shadow:0 8px 20px rgba(0,0,0,.20);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
 
 }
 
-/* ---------- Right Side ---------- */
+/* ---------- Hero Logo ---------- */
 
-/* Hero Logo Container (White Circle) */
 .hero-image{
 
     width:320px;
@@ -244,18 +290,14 @@ nav ul li a.active{
 
     flex-shrink:0;
 
-    margin-right:40px; 
-
 }
 
 .hero-image img{
 
-    width:650px;
-    height:650px;
+    width:240px;
+    height:240px;
 
     object-fit:contain;
-
-    display:block;
 
 }
 
@@ -276,6 +318,16 @@ section h4{
     letter-spacing:2px;
 
     margin-bottom:10px;
+
+}
+
+section h6{
+
+    color:#666;
+
+    font-size:16px;
+
+    font-weight:400;
 
 }
 
@@ -302,6 +354,16 @@ section h4{
 
 }
 
+.info-link{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    display:block;
+
+}
+
 .info-card{
 
     background:white;
@@ -310,23 +372,19 @@ section h4{
 
     border-radius:20px;
 
-    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
     transition:.3s;
 
-}
+    height:100%;
 
-.info-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
 }
 
 .info-card:hover{
 
     transform:translateY(-8px);
 
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 
 }
 
@@ -353,30 +411,43 @@ section h4{
 .map-section{
 
     width:92%;
-
     max-width:1400px;
 
     margin:70px auto;
+
+    text-align:center;
 
 }
 
 .map-section h2{
 
-    font-size:40px;
+    font-size:42px;
 
     margin:10px 0;
 
 }
 
-.map-section p{
+.map-section h4{
 
-    color:#666;
+    color:#d63384;
 
-    margin-bottom:25px;
+    letter-spacing:2px;
 
 }
 
-/* ---------- Map Container ---------- */
+.map-section h6{
+
+    color:#666;
+
+    font-size:16px;
+
+    font-weight:400;
+
+    margin-top:10px;
+
+}
+
+/* ---------- Map ---------- */
 
 .map{
 
@@ -434,6 +505,8 @@ section h4{
 
     transition:.3s;
 
+    z-index:10;
+
 }
 
 .station-btn:hover{
@@ -444,12 +517,99 @@ section h4{
 
 }
 
-/* ===== Adjust these to match your gym map ===== */
+/* ========== HOVER IMAGE PREVIEW ========== */
+
+.station-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:135px;
+
+    top:50%;
+
+    transform:translateY(-50%) scale(.9);
+
+    width:220px;
+
+    height:140px;
+
+    border-radius:12px;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    border:4px solid white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:100;
+
+}
+
+.station-btn:hover::after{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(-50%) scale(1);
+
+}
+
+/* Change image names to your files */
+
+.station1::after{
+
+    background-image:url("station1-preview.jpg");
+
+}
+
+.station2::after{
+
+    background-image:url("station2-preview.jpg");
+
+}
+
+.station3::after{
+
+    background-image:url("station3-preview.jpg");
+
+}
+
+.station4::after{
+
+    background-image:url("station4-preview.jpg");
+
+}
+
+.station5::after{
+
+    background-image:url("station5-preview.jpg");
+
+}
+
+.station6::after{
+
+    background-image:url("station6-preview.jpg");
+
+}
+
+/* ========== STATION LOCATIONS ========== */
 
 .station1{
 
     top:6%;
-
     left:78%;
 
 }
@@ -457,7 +617,6 @@ section h4{
 .station2{
 
     top:6%;
-
     left:46%;
 
 }
@@ -465,7 +624,6 @@ section h4{
 .station3{
 
     top:6%;
-
     left:18%;
 
 }
@@ -473,7 +631,6 @@ section h4{
 .station4{
 
     top:26%;
-
     left:18%;
 
 }
@@ -481,7 +638,6 @@ section h4{
 .station5{
 
     top:48%;
-
     left:18%;
 
 }
@@ -489,7 +645,6 @@ section h4{
 .station6{
 
     top:77%;
-
     left:18%;
 
 }
@@ -499,7 +654,6 @@ section h4{
 .stations{
 
     width:92%;
-
     max-width:1400px;
 
     margin:70px auto;
@@ -530,7 +684,7 @@ section h4{
 
     transform:translateY(-8px);
 
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 
 }
 
@@ -554,9 +708,9 @@ section h4{
 
 .station-card a{
 
-    text-decoration:none;
-
     color:#d63384;
+
+    text-decoration:none;
 
     font-weight:bold;
 
@@ -571,8 +725,56 @@ section h4{
 /* ===================================================
    SOSA 2026 WEBSITE
    PART 3
-   About • Contact • Station Pages
+   Breadcrumb • Station Pages • About • Contact
 =================================================== */
+
+/* ========== BREADCRUMB ========== */
+
+.breadcrumb{
+
+    width:90%;
+    max-width:900px;
+
+    margin:35px auto 10px;
+
+    font-size:15px;
+
+    color:#666;
+
+}
+
+.breadcrumb a{
+
+    color:#d63384;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.breadcrumb a:hover{
+
+    text-decoration:underline;
+
+}
+
+.breadcrumb span{
+
+    color:#777;
+
+}
+
+/* ========== STATION CONTENT ========== */
+
+.content{
+
+    width:90%;
+    max-width:900px;
+
+    margin:40px auto 70px;
+
+}
 
 /* ========== PAGE CONTENT ========== */
 
@@ -589,7 +791,7 @@ section h4{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
     gap:25px;
 
@@ -601,7 +803,9 @@ section h4{
 
     background:#fff;
 
-    padding:30px;
+    padding:35px;
+
+    margin-bottom:35px;
 
     border-radius:20px;
 
@@ -613,9 +817,9 @@ section h4{
 
 .page-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
 
 }
 
@@ -623,9 +827,19 @@ section h4{
 
     color:#d63384;
 
-    margin-bottom:15px;
+    font-size:30px;
 
-    font-size:28px;
+    margin-bottom:18px;
+
+}
+
+.page-card h3{
+
+    color:#444;
+
+    font-size:22px;
+
+    margin:25px 0 15px;
 
 }
 
@@ -633,11 +847,49 @@ section h4{
 
     color:#555;
 
-    line-height:1.8;
+    line-height:1.9;
+
+    margin-bottom:15px;
 
 }
 
-/* ========== STATION PAGE ========== */
+.page-card ul{
+
+    margin-left:25px;
+
+    line-height:2;
+
+    color:#555;
+
+}
+
+.page-card li{
+
+    margin-bottom:6px;
+
+}
+
+.page-card img{
+
+    width:100%;
+
+    display:block;
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.page-card img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ========== STATION HERO ========== */
 
 .station-hero{
 
@@ -671,7 +923,7 @@ section h4{
 
 }
 
-/* ========== GALLERY IMAGE ========== */
+/* ========== STATION GALLERY ========== */
 
 .station-gallery img{
 
@@ -691,13 +943,13 @@ section h4{
 
 }
 
-/* ========== LIST ========== */
+/* ========== STATION LIST ========== */
 
 .station-list{
 
     margin-top:15px;
 
-    margin-left:20px;
+    margin-left:22px;
 
     line-height:2;
 
@@ -789,7 +1041,7 @@ section h4{
 
     background:#d63384;
 
-    color:white;
+    color:#fff;
 
     border:none;
 
@@ -829,7 +1081,7 @@ section h4{
 
     background:#d63384;
 
-    color:white;
+    color:#fff;
 
     text-decoration:none;
 
@@ -861,11 +1113,11 @@ footer{
 
     background:#444;
 
-    color:white;
+    color:#fff;
 
     text-align:center;
 
-    padding:40px 20px;
+    padding:45px 20px;
 
     margin-top:70px;
 
@@ -885,6 +1137,8 @@ footer p{
 
     color:#ddd;
 
+    line-height:1.8;
+
 }
 
 /* ========== SCROLLBAR ========== */
@@ -897,7 +1151,7 @@ footer p{
 
 ::-webkit-scrollbar-track{
 
-    background:#eeeeee;
+    background:#efefef;
 
 }
 
@@ -915,7 +1169,7 @@ footer p{
 
 }
 
-/* ========== FADE ANIMATION ========== */
+/* ========== FADE UP ANIMATION ========== */
 
 @keyframes fadeUp{
 
@@ -941,7 +1195,8 @@ footer p{
 .info-card,
 .station-card,
 .page-card,
-.contact-box{
+.contact-box,
+.map{
 
     animation:fadeUp .8s ease;
 
@@ -955,6 +1210,8 @@ nav{
 
     flex-direction:column;
 
+    justify-content:center;
+
     height:auto;
 
     padding:20px;
@@ -964,6 +1221,14 @@ nav{
 .logo{
 
     margin-bottom:15px;
+
+}
+
+.logo img{
+
+    width:60px;
+
+    height:60px;
 
 }
 
@@ -977,7 +1242,7 @@ nav ul{
 
 nav ul li{
 
-    margin:10px;
+    margin:10px 15px;
 
 }
 
@@ -987,7 +1252,9 @@ nav ul li{
 
     text-align:center;
 
-    padding:40px;
+    padding:45px 35px;
+
+    gap:35px;
 
 }
 
@@ -997,16 +1264,9 @@ nav ul li{
 
 }
 
-  .hero-image{
-
-        width:300px;
-        height:300px;
-
-    }
-
 .hero h1{
 
-    font-size:40px;
+    font-size:42px;
 
 }
 
@@ -1016,47 +1276,71 @@ nav ul li{
 
 }
 
+.hero-image{
+
+    width:250px;
+
+    height:250px;
+
+    margin-right:0;
+
+}
+
 .hero-image img{
 
-    width:270px;
+    width:190px;
 
-    height:270px;
-
-}
-
-.info{
-
-    grid-template-columns:1fr;
+    height:190px;
 
 }
 
-.stations{
-
-    grid-template-columns:1fr;
-
-}
-
+.info,
+.stations,
 .page-grid{
 
     grid-template-columns:1fr;
 
 }
 
-.map-section h2{
+.content{
 
-    font-size:32px;
+    width:92%;
 
 }
 
-/* Mobile Station Buttons */
+.page-card{
+
+    padding:28px;
+
+}
+
+.map-section h2{
+
+    font-size:34px;
+
+}
+
+/* Station Buttons */
 
 .station-btn{
 
     width:90px;
 
-    height:34px;
+    height:55px;
 
     font-size:11px;
+
+}
+
+/* Hover Image */
+
+.station-btn::after{
+
+    width:170px;
+
+    height:110px;
+
+    left:100px;
 
 }
 
@@ -1072,29 +1356,45 @@ nav{
 
 }
 
+.logo{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
 .logo img{
 
-    width:50px;
+    width:55px;
 
-    height:50px;
+    height:55px;
+
+    margin:0 0 10px;
 
 }
 
 .logo h2{
 
-    font-size:20px;
+    font-size:22px;
 
 }
 
 .logo p{
 
-    font-size:11px;
+    display:none;
+
+}
+
+nav ul{
+
+    margin-top:10px;
 
 }
 
 nav ul li{
 
-    margin:8px;
+    margin:6px;
 
 }
 
@@ -1106,15 +1406,15 @@ nav ul li a{
 
 .hero{
 
-    margin-top:160px;
+    margin-top:170px;
 
-    padding:30px 20px;
+    padding:35px 20px;
 
 }
 
 .hero h1{
 
-    font-size:30px;
+    font-size:32px;
 
 }
 
@@ -1138,19 +1438,61 @@ nav ul li a{
 
 }
 
+.hero-image{
+
+    width:190px;
+
+    height:190px;
+
+}
+
 .hero-image img{
 
-    width:180px;
+    width:145px;
 
-    height:180px;
+    height:145px;
+
+}
+
+/* Cards */
+
+.page-card{
+
+    padding:22px;
+
+}
+
+.page-card h2{
+
+    font-size:24px;
+
+}
+
+.page-card h3{
+
+    font-size:19px;
+
+}
+
+.page-card ul{
+
+    margin-left:20px;
+
+}
+
+/* Hide image preview on phones */
+
+.station-btn::after{
+
+    display:none;
 
 }
 
 .station-btn{
 
-    width:75px;
+    width:70px;
 
-    height:30px;
+    height:40px;
 
     font-size:10px;
 
@@ -1188,5 +1530,43 @@ footer p{
     max-width:1600px;
 
 }
+
+.content{
+
+    max-width:1000px;
+
+}
+
+}
+
+/* ========== SMOOTH HOVER EFFECTS ========== */
+
+.page-card,
+.info-card,
+.station-card,
+.button,
+.station-btn{
+
+    transition:all .3s ease;
+
+}
+
+.page-card:hover,
+.info-card:hover,
+.station-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.page-card img{
+
+    transition:.3s;
+
+}
+
+.page-card:hover img{
+
+    transform:scale(1.02);
 
 }
